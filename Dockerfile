@@ -11,4 +11,4 @@ RUN apt-get update -qq \
     && apt-get autoremove -y \
     && rm -r /var/lib/apt/lists/* \
     && mkdir /root/Yandex.Disk
-CMD ["yandex-disk", "start", "--no-daemon", "dir=/root/Yandex.Disk"]
+CMD ["yandex-disk", "start", "--no-daemon", "--dir=/root/Yandex.Disk"]

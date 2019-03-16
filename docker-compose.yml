@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  ya.disk:
+    build: .
+#   restart: always
+#   image: tty8747:yandex-disk
+    volumes:
+      - ./config:/root/.config
+      - ./data:/root/Yandex.Disk
